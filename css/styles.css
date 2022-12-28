@@ -1,0 +1,205 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --header-text-color: #212121;
+  --primary-bgd-color: #ffffff;
+  --secondary-bgd-color: #2f303a;
+  --third-bgd-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgd-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/*logo*/
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+/* navigation */
+
+.nav-menu {
+  color: var(--header-text-color);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.contact-menu {
+  color: var(--header-text-color);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+/*HERO*/
+
+.hero {
+  background-color: var(--secondary-bgd-color);
+}
+
+.hero-header {
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background-color: #2196f3;
+  /* w mokapie przycisk nie ma zaznaczonego wizualnie cursor: pointer, ale w wymaganiach do zadania jest napisane, zeby prycisk miały określoną taką wartość*/
+  cursor: pointer;
+}
+
+/*our advantages*/
+
+.subsection-title {
+  color: var(--header-text-color);
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* what we do*/
+
+.section-title {
+  color: var(--header-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/*our team*/
+
+.our-team-bkg {
+  background-color: var(--third-bgd-color);
+}
+
+.name {
+  color: var(--header-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.speciality {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--secondary-bgd-color);
+}
+
+.logo-web-footer {
+  color: var(--secondary-text-color);
+}
+
+.adress-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.contact-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-footer:hover,
+.contact-footer:focus,
+.contact-footer:active {
+  color: var(--accent-color);
+}
+
+/*portfolio CSS*/
+
+.pf-button {
+  font-family: "Roboto", sans-serif;
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: var(--third-bgd-color);
+  cursor: pointer;
+  border: none;
+}
+
+.pf-button:hover,
+.pf-button:focus,
+.pf-button:active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.component {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-text-color);
+}
+
+.component-type {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
