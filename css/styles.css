@@ -31,6 +31,25 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*logo*/
 
 .logo {
@@ -49,6 +68,15 @@ body {
 
 /* navigation */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .nav-menu:not(:last-child) {
+  margin-right: 46px;
+}
+
 .nav-menu {
   color: var(--header-text-color);
   font-weight: 500;
@@ -56,8 +84,23 @@ body {
   letter-spacing: 0.02em;
 }
 
+.nav-menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav-contact .contact-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-menu {
-  color: var(--header-text-color);
+  color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -67,16 +110,26 @@ body {
 
 .hero {
   background-color: var(--secondary-bgd-color);
+  text-align: center;
+  padding: 200px 0px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  border-radius: 0px;
 }
 
 .hero-header {
+  max-width: 696px;
+  text-align: center;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .hero-button {
@@ -86,13 +139,40 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
+  font-family: Roboto;
+  padding: 10px 42px 10px 41px;
   color: var(--secondary-text-color);
   background-color: #2196f3;
   /* w mokapie przycisk nie ma zaznaczonego wizualnie cursor: pointer, ale w wymaganiach do zadania jest napisane, zeby prycisk miały określoną taką wartość*/
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 /*our advantages*/
+
+.subsection {
+  padding-top: 94px;
+}
+.container-subsection {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.subsection-element {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.subsection-element:last-child {
+  margin-right: 0;
+}
+
+.subsection-element:first-child {
+  margin-left: 0;
+}
 
 .subsection-title {
   color: var(--header-text-color);
@@ -100,9 +180,21 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /* what we do*/
+
+.whatwedo-list {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.whatwedo-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .section-title {
   color: var(--header-text-color);
@@ -111,9 +203,36 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 /*our team*/
+
+.container-ourteam {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.ourteam-item {
+  max-width: 270px;
+  max-height: 368px;
+  margin-right: 30px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.ourteam-item:last-child {
+  margin-right: 0px;
+}
+
+.team-description {
+  text-align: center;
+}
 
 .our-team-bkg {
   background-color: var(--third-bgd-color);
@@ -125,7 +244,9 @@ body {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 30px;
 }
 
 .speciality {
@@ -133,13 +254,21 @@ body {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 /*footer*/
 
+.footer-logo {
+  margin-bottom: 20px;
+}
+
 .footer {
   background-color: var(--secondary-bgd-color);
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .logo-web-footer {
@@ -152,6 +281,15 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.adress {
+  padding-bottom: 60px;
+  padding-left: 0px;
+}
+
+.adress-data {
+  margin-bottom: 9px;
 }
 
 .contact-footer {
