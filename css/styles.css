@@ -17,6 +17,23 @@ body {
   background-color: var(--primary-bgd-color);
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -27,14 +44,13 @@ body {
   color: var(--accent-color);
 }
 
-.list {
+/*.list {
   list-style: none;
-}
+Dozwolone globalne resetowanie stylów w zadaniu 3
+}*/
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,12 +58,15 @@ body {
 .main-menu {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.header-index {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 /*logo*/
@@ -60,6 +79,8 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-web {
@@ -112,10 +133,6 @@ body {
   background-color: var(--secondary-bgd-color);
   text-align: center;
   padding: 200px 0px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  border-radius: 0px;
 }
 
 .hero-header {
@@ -127,9 +144,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -152,9 +168,10 @@ body {
 
 /*our advantages*/
 
-.subsection {
-  padding-top: 94px;
+.p-0 {
+  padding-bottom: 0px;
 }
+
 .container-subsection {
   display: flex;
   flex-wrap: wrap;
@@ -188,12 +205,15 @@ body {
 .whatwedo-list {
   display: flex;
   justify-content: center;
-  margin-right: 30px;
   margin-left: 0;
 }
 
-.whatwedo-item:not(:last-child) {
+.whatwedo-item {
   margin-right: 30px;
+}
+
+.whatwedo-item:last-child {
+  margin-right: 0px;
 }
 
 .section-title {
@@ -204,15 +224,13 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 0;
 }
 
 /*our team*/
 
 .container-ourteam {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
+  justify-content: center;
 }
 
 .ourteam-item {
@@ -244,7 +262,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 0;
   padding-top: 30px;
 }
 
@@ -253,8 +270,6 @@ body {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-bottom: 30px;
 }
 
@@ -285,6 +300,7 @@ body {
 .adress {
   padding-bottom: 60px;
   padding-left: 0px;
+  margin-top: 20px;
 }
 
 .adress-data {
@@ -306,6 +322,16 @@ body {
 
 /*portfolio CSS*/
 
+.header-portfolio {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.pf-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
 .pf-button {
   font-family: "Roboto", sans-serif;
   color: var(--header-text-color);
@@ -317,6 +343,10 @@ body {
   background-color: var(--third-bgd-color);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 6px 22px;
+  margin-bottom: 16px;
 }
 
 .pf-button:hover,
@@ -326,12 +356,32 @@ body {
   color: #ffffff;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.portfolio-flex-element {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.work-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .component {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-text-color);
+  margin-bottom: 4px;
 }
 
 .component-type {
